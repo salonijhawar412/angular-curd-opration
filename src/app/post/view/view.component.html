@@ -1,0 +1,22 @@
+
+<div class="container">
+    <h1>View Post</h1>
+  
+    <a href="#" routerLink="/post" class="btn btn-primary">Back</a>
+   
+    <div  *ngIf='post && post.id'>
+        <strong>ID:</strong>
+        <p>{{ post.id }}</p>
+    </div>
+   
+    <div  *ngIf='post && post.title'>
+        <strong>Title:</strong>
+        <p>{{ post.title }}</p>
+    </div>
+   
+    <div  *ngIf='post && post.body'>
+        <strong>Body:</strong>
+        <p>{{ post.body }}</p>
+    </div>
+   
+</div>
